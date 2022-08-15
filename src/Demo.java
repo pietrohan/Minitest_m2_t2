@@ -17,14 +17,10 @@ public class Demo {
 
         double averageSalary = 0;
         int sum = 0;
-        int court = 0;
         for (Employee l : listEmployee
         ) {
             sum += l.getSalary();
-            if (court < listEmployee.length) {
-                court++;
-            }
-            averageSalary = sum / court;
+            averageSalary = sum /listEmployee.length;
         }
         System.out.println("trung bình lương của nhân viên công ty là: " + averageSalary);
 
@@ -62,6 +58,5 @@ public class Demo {
                 System.out.println(p);
             }
     }
-
 }
 }
